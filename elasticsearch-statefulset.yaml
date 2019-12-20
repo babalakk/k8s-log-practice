@@ -68,6 +68,9 @@ spec:
       labels:
         app: elasticsearch
     spec:
+      selector:
+        matchLabels:
+          app: elasticsearch
       accessModes: [ "ReadWriteOnce" ]
       resources:
         requests:

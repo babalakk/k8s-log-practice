@@ -3,6 +3,8 @@ kind: PersistentVolume
 metadata:
   name: pv01
   namespace: logging
+  labels:
+    app: elasticsearch
 spec:
   capacity:
     storage: 1Gi
